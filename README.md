@@ -1,36 +1,47 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🌐 Portfolio – Hermann Mandaba
 
-## Getting Started
+Bienvenue sur mon portfolio personnel !  
+Je suis **Hermann Mandaba**, développeur Web Frontend freelance spécialisé dans la création de sites modernes, performants et responsives avec **Next.js**, **Tailwind CSS** et **TypeScript**.
 
-First, run the development server:
+---
+
+## 🚀 À propos du projet
+
+Ce projet a pour objectif de :
+
+- Présenter mes compétences et mon parcours
+- Mettre en avant mes projets réalisés ou en cours
+- Proposer mes services à des clients potentiels
+- Me positionner comme expert en développement Frontend
+
+---
+
+## 🛠️ Technologies utilisées
+
+- **[Next.js](https://nextjs.org/)** – Framework React pour le rendu côté serveur & le routage
+- **[Tailwind CSS](https://tailwindcss.com/)** – Framework CSS utilitaire
+- **[TypeScript](https://www.typescriptlang.org/)** – Superset de JavaScript typé
+- **[Figma](https://figma.com/)** – Outil de design pour les maquettes UI
+
+---
+
+## 📸 Aperçu du site
+
+![Aperçu du portfolio](./public/preview.jpg) <!-- Tu peux ajouter une vraie image ici -->
+
+---
+
+## 📁 Structure du projet
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+mon-portfolio/
+├── app/
+├── components/
+├── sections/
+├── public/
+├── styles/
+├── types/
+├── lib/
+├── tailwind.config.ts
+├── tsconfig.json
+├── next.config.js
