@@ -20,7 +20,7 @@ const ProjectsSection = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {projects.map((project, index) => (
-            <Card key={index} className="bg-[#1A2332] border border-[#D4AF37] border-opacity-20 hover:border-[#D4AF37] hover:border-opacity-50 transition-all duration-300 transform hover:scale-105 hover:shadow-2xl group">
+            <Card key={index} className="bg-[#1A2332] border border-[#D4AF37]/20 hover:border-[#D4AF37]/50 transition-all duration-300 transform hover:scale-105 hover:shadow-2xl group">
               <CardContent className="p-0">
                 <div className="relative w-full h-48 overflow-hidden rounded-t-lg">
                   <Image
@@ -29,18 +29,18 @@ const ProjectsSection = () => {
                     fill
                     className="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-110"
                   />
-                  <div className="absolute inset-0 bg-[#0F1629] bg-opacity-60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                  <div className="absolute inset-0 bg-[#0F1629]/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
                     <div className="flex space-x-4">
                       <Button 
                         size="sm" 
-                        className="bg-[#D4AF37] hover:bg-[#E6C659] text-[#0F1629]"
+                        className="bg-[#D4AF37] hover:bg-[#E6C659] text-[#0F1629] cursor-pointer"
                       >
                         Live Demo
                       </Button>
                       <Button 
                         size="sm" 
                         variant="outline" 
-                        className="border-[#D4AF37] text-[#D4AF37] hover:bg-[#D4AF37] hover:text-[#0F1629]"
+                        className="border-[#D4AF37] text-[#D4AF37] hover:bg-[#D4AF37] hover:text-[#0F1629] cursor-pointer"
                       >
                         GitHub
                       </Button>
@@ -58,7 +58,7 @@ const ProjectsSection = () => {
                     {project.tech.map((tech, techIndex) => (
                       <span 
                         key={techIndex}
-                        className="px-3 py-1 bg-[#D4AF37] bg-opacity-50 text-[#D4AF37] text-sm rounded-full font-inter"
+                        className="px-3 py-1 bg-[#D4AF37]/20 text-[#D4AF37] text-sm rounded-full font-inter cursor-pointer"
                       >
                         {tech}
                       </span>

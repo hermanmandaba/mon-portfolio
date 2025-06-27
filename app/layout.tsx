@@ -19,6 +19,7 @@ export const metadata: Metadata = {
   description: "Professional Frontend Web Developer specializing in Next.js, Tailwind CSS, TypeScript, and Responsive Design",
 };
 
+
 export default function RootLayout({
   children,
 }: Readonly<{

@@ -34,7 +34,7 @@ const HeroSection = () => {
           </p>
           <Button 
             onClick={scrollToContact}
-            className="bg-[#D4AF37] hover:bg-[#E6C659] text-[#0F1629] font-semibold px-8 py-4 text-lg rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-[#D4AF37] hover:shadow-opacity-25 cursor-pointer"
+            className="bg-[#D4AF37] hover:bg-[#E6C659] text-[#0F1629] font-semibold px-8 py-4 text-lg rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-[#D4AF37]/25 cursor-pointer"
           >
             Let's Work Together
           </Button>

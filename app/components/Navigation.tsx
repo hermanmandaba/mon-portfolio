@@ -18,7 +18,7 @@ const Navigation = () => {
   };
 
   return (
-    <nav className="fixed top-0 left-0 right-0 bg-[#0F1629] bg-opacity-90 backdrop-blur-md z-50 border-b border-[#D4AF37] border-opacity-20">
+    <nav className="fixed top-0 left-0 right-0 bg-[#0F1629]/90  backdrop-blur-md z-50 border-b border-[#D4AF37]/20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center py-4">
           <div className="flex items-center">

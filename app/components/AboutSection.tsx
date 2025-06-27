@@ -48,7 +48,7 @@ const ref = useRef(null)
             <div className="relative">
               <div className=" relative w-80 h-80 rounded-full overflow-hidden border-4 border-[#D4AF37] shadow-2xl">
                 <Image 
-                src="/Avatar.jpg"
+                src="/Hermann_Mandaba.jpg"
                 alt="Hermann Mandaba" 
                 fill
                 className="w-full h-full object-cover" 
