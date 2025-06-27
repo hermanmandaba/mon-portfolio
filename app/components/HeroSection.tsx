@@ -1,5 +1,6 @@
 "use client"
 
+import Link from "next/link";
 /* eslint-disable react/no-unescaped-entities */
 import { Button } from "./ui/Button";
 
@@ -26,18 +27,20 @@ const HeroSection = () => {
             Hermann <span className="text-[#D4AF37]">Mandaba</span>
           </h1>
           <p className="text-xl md:text-2xl lg:text-3xl text-gray-300 mb-8 font-inter">
-            Frontend Web Developer
+           Frontend Web Developer
           </p>
           <p className="text-lg md:text-xl text-gray-400 mb-12 max-w-2xl mx-auto font-inter leading-relaxed">
-            Crafting exceptional digital experiences with modern technologies. 
-            Specializing in React, Next.js, and pixel-perfect implementations.
+            I Crafting exceptional digital experiences with modern technologies. 
+            Specializing in <code className="p-1 bg-blur">React, Tailwind</code> and pixel-perfect implementations.
           </p>
+          <Link href="#contact">
           <Button 
             onClick={scrollToContact}
             className="bg-[#D4AF37] hover:bg-[#E6C659] text-[#0F1629] font-semibold px-8 py-4 text-lg rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-[#D4AF37]/25 cursor-pointer"
           >
             Let's Work Together
           </Button>
+          </Link>
         </div>
       </div>
 

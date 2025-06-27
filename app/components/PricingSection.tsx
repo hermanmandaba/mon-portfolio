@@ -4,6 +4,7 @@ import { Check } from "lucide-react";
 import pricingPlans from "../types/Pricing";
 import { Button } from "./ui/Button";
 import { Card, CardContent } from "./ui/card";
+import Link from "next/link";
 
 
 const PricingSection = () => {
@@ -69,7 +70,7 @@ const PricingSection = () => {
                     </div>
                   ))}
                 </div>
-
+                  <Link href="#contact">
                 <Button 
                   onClick={scrollToContact}
                   className={`w-full py-3 font-semibold transition-all duration-200 ${
@@ -80,6 +81,7 @@ const PricingSection = () => {
                 >
                   Get Started
                 </Button>
+                </Link>
               </CardContent>
             </Card>
           ))}
@@ -89,12 +91,14 @@ const PricingSection = () => {
           <p className="text-gray-400 font-inter mb-4">
             Need something custom? Let's discuss your specific requirements.
           </p>
+          <Link href="#contact">
           <Button 
             onClick={scrollToContact}
             className="bg-transparent border border-[#D4AF37] text-[#D4AF37] hover:bg-[#D4AF37] hover:text-[#0F1629] font-semibold px-8 py-3 transition-all duration-200"
           >
             Request Custom Quote
           </Button>
+          </Link>
         </div>
       </div>
     </section>

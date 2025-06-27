@@ -5,6 +5,7 @@ import { useState } from 'react';
 import { Button } from './ui/Button';
 import { motion, AnimatePresence } from "framer-motion"
 import { HiOutlineMenu, HiOutlineX } from "react-icons/hi"
+import Link from 'next/link';
 
 const Navigation = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -21,9 +22,11 @@ const Navigation = () => {
     <nav className="fixed top-0 left-0 right-0 bg-[#0F1629]/90  backdrop-blur-md z-50 border-b border-[#D4AF37]/20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center py-4">
-          <div className="flex items-center">
-            <span className="text-2xl font-bold font-poppins text-[#D4AF37]">HM</span>
-          </div>
+          <Link href="https://mon-portfolio-psi-ten.vercel.app/">
+            <div className="flex items-center">
+              <span className="text-2xl font-bold font-poppins text-[#D4AF37]">HM</span>
+            </div>
+          </Link>
           
           {/* Desktop Menu */}
 
@@ -66,12 +69,16 @@ const Navigation = () => {
             </button>
           </div>
 
+          <Link
+          href="#contact"
+          >
           <Button 
             onClick={() => scrollToSection('contact')}
             className="hidden md:block bg-[#D4AF37] hover:bg-[#E6C659] cursor-pointer text-[#0F1629] font-semibold px-6 py-2 rounded-lg transition-all duration-200"
           >
             Let's Work Together
           </Button>
+          </Link>
 
           {/* Mobile Menu Button */}
           <button
@@ -147,12 +154,14 @@ const Navigation = () => {
               >
                 Contact
               </button>
+              <Link href="#contact">
               <Button 
                 onClick={() => scrollToSection('contact')}
                 className="bg-[#D4AF37] hover:bg-[#E6C659] text-[#0F1629] cursor-pointer font-semibold px-6 py-2 rounded-lg transition-all duration-200 w-fit"
               >
                 Let's Work Together
               </Button>
+              </Link>
             </div>
           </div>
         )}

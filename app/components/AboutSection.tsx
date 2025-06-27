@@ -72,7 +72,7 @@ const ref = useRef(null)
               About Me
             </h2>
             <p className="text-lg text-gray-300 mb-8 font-inter leading-relaxed">
-              I'm a passionate Frontend Web Developer with over 3 years of experience creating 
+              I'm a passionate Frontend Web Developer with over 2 years of experience creating 
               beautiful, functional, and user-centered digital experiences. I combine technical 
               expertise with creative problem-solving to deliver exceptional web solutions.
             </p>

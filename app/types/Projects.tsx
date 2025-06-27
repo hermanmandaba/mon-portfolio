@@ -36,7 +36,7 @@ const projects: Project[] = [
     title: "Restaurant Website",
     description: "Beautiful restaurant website with online ordering and reservation system.",
     image: "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=600&h=400&fit=crop",
-    tech: ["React", "Node.js", "MongoDB", "Responsive Design"],
+    tech: ["React", "Tailwind CSS", "TypeScript", "Responsive Design"],
     liveUrl: "#",
     githubUrl: "#"
   }
