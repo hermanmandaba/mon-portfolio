@@ -67,7 +67,7 @@ const ContactSection = () => {
             Let's Work Together
           </h2>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto font-inter leading-relaxed">
-            Ready to bring your ideas to life? Let's discuss your project and create something amazing together.
+            Have a project in mind ? Whether it's a landing page, a business site or a full e-commerce platform. I'm here to turn your ideas into fast, modern, and animated web experiences.
           </p>
         </div>
 

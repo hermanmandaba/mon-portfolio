@@ -72,14 +72,10 @@ const ref = useRef(null)
               About Me
             </h2>
             <p className="text-lg text-gray-300 mb-8 font-inter leading-relaxed">
-              I'm a passionate Frontend Web Developer with over 2 years of experience creating 
-              beautiful, functional, and user-centered digital experiences. I combine technical 
-              expertise with creative problem-solving to deliver exceptional web solutions.
+              I'm Hermann, a frontend web developer driven by design, detail, and results. With over 2 years of experience, I craft fast, responsive, and animated web interfaces that make brands stand out. I specialize in modern stacks like React and Tailwind, and I focus on delivering clean code and great user experiences.
             </p>
             <p className="text-lg text-gray-300 mb-8 font-inter leading-relaxed">
-              My expertise lies in modern JavaScript frameworks, responsive design, and creating 
-              scalable, maintainable code. I'm constantly learning and adapting to new technologies 
-              to stay at the forefront of web development.
+              Whether it's a landing page, a company website, or an online store. I turn ideas into elegant, functionnal web solutions. Let's wok together to bring your vision to life.
             </p>
 
             {/* Skills */}

@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import services from "../types/Services";
 import { Card, CardContent } from "./ui/card";
 
@@ -13,8 +14,8 @@ const ServicesSection = () => {
             Services
           </h2>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto font-inter leading-relaxed">
-            Comprehensive web development services tailored to help your business succeed online 
-            with modern, scalable solutions.
+            I offer four web services designed to meet your business needs. Whether you're launching, growing, or scaling online. 
+            Each service is built with performance, design, and conversion in mind.
           </p>
         </div>
 

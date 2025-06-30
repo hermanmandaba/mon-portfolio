@@ -24,8 +24,9 @@ const PricingSection = () => {
             Pricing
           </h2>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto font-inter leading-relaxed">
-            Transparent pricing for quality web development services. 
-            Choose the perfect package for your business needs.
+            Transparent pricing. No surprises. Each package is tailored to fit your goals. 
+            Whether you're launching a product, showcasing your brand, or selling online. 
+            Get premium design, clean code, and full support at every stage of the project.
           </p>
         </div>
 
@@ -89,7 +90,7 @@ const PricingSection = () => {
 
         <div className="text-center mt-12">
           <p className="text-gray-400 font-inter mb-4">
-            Need something custom? Let's discuss your specific requirements.
+            Not sure which option is right for you? Let's talk and fing the best fit.
           </p>
           <Link href="#contact">
           <Button 

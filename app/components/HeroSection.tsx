@@ -17,7 +17,7 @@ const HeroSection = () => {
       {/* Background decoration */}
       <div className="absolute inset-0 opacity-10">
         <div className="absolute top-20 left-20 w-72 h-72 bg-[#D4AF37] rounded-full mix-blend-multiply filter blur-xl animate-pulse"></div>
-        <div className="absolute top-40 right-20 w-96 h-96 bg-[#E6C659] rounded-full mix-blend-multiply filter blur-xl animate-pulse delay-1000"></div>
+        <div className="absolute top-50 right-20 w-96 h-96 bg-[#E6C659] rounded-full mix-blend-multiply filter blur-xl animate-pulse delay-1000"></div>
         <div className="absolute bottom-20 left-1/2 w-80 h-80 bg-[#D4AF37] rounded-full mix-blend-multiply filter blur-xl animate-pulse delay-2000"></div>
       </div>
 
@@ -27,11 +27,11 @@ const HeroSection = () => {
             Hermann <span className="text-[#D4AF37]">Mandaba</span>
           </h1>
           <p className="text-xl md:text-2xl lg:text-3xl text-gray-300 mb-8 font-inter">
-           Frontend Web Developer
+           I build animated,high-converting websites
           </p>
           <p className="text-lg md:text-xl text-gray-400 mb-12 max-w-2xl mx-auto font-inter leading-relaxed">
-            I Crafting exceptional digital experiences with modern technologies. 
-            Specializing in <code className="p-1 bg-blur">React, Tailwind</code> and pixel-perfect implementations.
+            For startups, entrepreneurs and modern brands who want to stand out online. Clean code. Smooth UI. Pixel-perfect.
+            Built with React, Tailwind and motion design magic. 
           </p>
           <Link href="#contact">
           <Button 

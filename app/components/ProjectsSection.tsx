@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import { Card, CardContent } from '@/app/components/ui/card';
 import { Button } from './ui/Button';
 import projects from '@/app/types/Projects';
@@ -13,8 +14,8 @@ const ProjectsSection = () => {
             Featured Projects
           </h2>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto font-inter leading-relaxed">
-            A showcase of my recent work, demonstrating expertise in modern web development 
-            technologies and user-centered design principles.
+            Here's a selection of my recent projects - each one crafted with precision, creativity, and a focus on real user experience. 
+            From animated landing pages to fully responsive websites and onlines stores, these works reflect my approch: clean code, elegant design, and measurable results.
           </p>
         </div>
 
@@ -40,7 +41,7 @@ const ProjectsSection = () => {
                       <Button 
                         size="sm" 
                         variant="outline" 
-                        className="border-[#D4AF37] text-[#D4AF37] hover:bg-[#D4AF37] hover:text-[#0F1629] cursor-pointer"
+                        className="border-[#D4AF37] text-[#D4AF37] bg-white hover:bg-[#D4AF37] hover:text-[#0F1629] cursor-pointer"
                       >
                         GitHub
                       </Button>

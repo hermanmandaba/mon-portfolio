@@ -29,7 +29,6 @@ const Navigation = () => {
           </Link>
           
           {/* Desktop Menu */}
-
           <div className="hidden md:flex space-x-8">
             <button 
               onClick={() => scrollToSection('home')}
