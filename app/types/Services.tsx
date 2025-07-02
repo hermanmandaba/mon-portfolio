@@ -26,10 +26,10 @@ type Service = {
       features: ['Figma to Code', 'Interactive Elements', 'Cross-browser Compatible', 'Performance Optimized'],
     },
     {
-      title: 'E-Commerce Solutions',
+      title: 'E-Commerce Landing Pages',
       description:
         'Fully functionnal, responsive online stores with custom checkout, product pages and CMS integration.',
-      features: ['Shopping Cart', 'Payment Gateway', 'Admin Dashboard', 'Order Management'],
+      features: ['Simple Add-to-Cart or Direct Checkout Flow', 'Secure Payment Integration', 'Custom Product Page Layout', 'CMS Integration (optional)', 'Fully Responsive & Smooth Animations'],
     },
   ];
 

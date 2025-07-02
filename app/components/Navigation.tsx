@@ -1,13 +1,14 @@
-"use client";
-
 /* eslint-disable react/no-unescaped-entities */
-import { useState } from 'react';
+'use client';
+
+import {  useState } from 'react';
 import { Button } from './ui/Button';
-import { motion, AnimatePresence } from "framer-motion"
-import { HiOutlineMenu, HiOutlineX } from "react-icons/hi"
+import { motion, AnimatePresence } from "framer-motion";
+import { HiOutlineMenu, HiOutlineX } from "react-icons/hi";
 import Link from 'next/link';
 
-const Navigation = () => {
+export const Navigation = () => {
+
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const scrollToSection = (sectionId: string) => {
@@ -27,57 +28,38 @@ const Navigation = () => {
               <span className="text-2xl font-bold font-poppins text-[#D4AF37]">HM</span>
             </div>
           </Link>
-          
+
           {/* Desktop Menu */}
           <div className="hidden md:flex space-x-8">
-            <button 
-              onClick={() => scrollToSection('home')}
-              className="text-white hover:text-[#D4AF37] transition-colors cursor-pointer duration-200 font-inter"
-            >
-              Home
+            <button onClick={() => scrollToSection('home')} className="text-white cursor-pointer hover:text-[#D4AF37] transition-colors duration-200 font-inter">
+              home
             </button>
-            <button 
-              onClick={() => scrollToSection('about')}
-              className="text-white hover:text-[#D4AF37] transition-colors cursor-pointer duration-200 font-inter"
-            >
-              About
+            <button onClick={() => scrollToSection('about')} className="text-white cursor-pointer hover:text-[#D4AF37] transition-colors duration-200 font-inter">
+              about
             </button>
-            <button 
-              onClick={() => scrollToSection('projects')}
-              className="text-white hover:text-[#D4AF37] transition-colors cursor-pointer duration-200 font-inter"
-            >
-              Projects
+            <button onClick={() => scrollToSection('projects')} className="text-white cursor-pointer hover:text-[#D4AF37] transition-colors duration-200 font-inter">
+              projects
             </button>
-            <button 
-              onClick={() => scrollToSection('services')}
-              className="text-white hover:text-[#D4AF37] transition-colors cursor-pointer duration-200 font-inter"
-            >
-              Services
+            <button onClick={() => scrollToSection('services')} className="text-white cursor-pointer hover:text-[#D4AF37] transition-colors duration-200 font-inter">
+              services
             </button>
-            <button 
-              onClick={() => scrollToSection('pricing')}
-              className="text-white hover:text-[#D4AF37] transition-colors cursor-pointer duration-200 font-inter"
-            >
-              Pricing
+            <button onClick={() => scrollToSection('pricing')} className="text-white cursor-pointer hover:text-[#D4AF37] transition-colors duration-200 font-inter">
+              pricing
             </button>
-            <button 
-              onClick={() => scrollToSection('contact')}
-              className="text-white hover:text-[#D4AF37] transition-colors cursor-pointer duration-200 font-inter"
-            >
-              Contact
+            <button onClick={() => scrollToSection('contact')} className="text-white cursor-pointer hover:text-[#D4AF37] transition-colors duration-200 font-inter">
+              contact
             </button>
           </div>
-
-          <Link
-          href="#contact"
-          >
-          <Button 
-            onClick={() => scrollToSection('contact')}
-            className="hidden md:block bg-[#D4AF37] hover:bg-[#E6C659] cursor-pointer text-[#0F1629] font-semibold px-6 py-2 rounded-lg transition-all duration-200"
-          >
-            Let's Work Together
-          </Button>
+          <div className="flex items-center justify-center gap-2">
+          <Link href="#contact">
+            <Button 
+              onClick={() => scrollToSection('contact')}
+              className="hidden md:block bg-[#D4AF37] hover:bg-[#E6C659] text-[#0F1629] font-semibold px-6 py-2 rounded-lg transition-all duration-200 cursor-pointer"
+            >
+              Let's Work Together
+            </Button>
           </Link>
+          </div>
 
           {/* Mobile Menu Button */}
           <button
@@ -87,79 +69,61 @@ const Navigation = () => {
           >
             <AnimatePresence mode='wait' initial={false}>
               {isMenuOpen ? (
-          <motion.span
-            key="close"
-            initial={{ rotate: -90, opacity: 0 }}
-            animate={{ rotate: 0, opacity: 1 }}
-            exit={{ rotate: 90, opacity: 0 }}
-            transition={{ duration: 0.2 }}
-            className="text-2xl"
-          >
-            <HiOutlineX />
-          </motion.span>
-        ) : (
-          <motion.span
-            key="menu"
-            initial={{ rotate: 90, opacity: 0 }}
-            animate={{ rotate: 0, opacity: 1 }}
-            exit={{ rotate: -90, opacity: 0 }}
-            transition={{ duration: 0.2 }}
-            className="text-2xl"
-          >
-            <HiOutlineMenu />
-          </motion.span>
-        )}
+                <motion.span
+                  key="close"
+                  initial={{ rotate: -90, opacity: 0 }}
+                  animate={{ rotate: 0, opacity: 1 }}
+                  exit={{ rotate: 90, opacity: 0 }}
+                  transition={{ duration: 0.2 }}
+                  className="text-2xl"
+                >
+                  <HiOutlineX />
+                </motion.span>
+              ) : (
+                <motion.span
+                  key="menu"
+                  initial={{ rotate: 90, opacity: 0 }}
+                  animate={{ rotate: 0, opacity: 1 }}
+                  exit={{ rotate: -90, opacity: 0 }}
+                  transition={{ duration: 0.2 }}
+                  className="text-2xl"
+                >
+                  <HiOutlineMenu />
+                </motion.span>
+              )}
             </AnimatePresence>
           </button>
         </div>
 
         {/* Mobile Menu */}
         {isMenuOpen && (
-          <div className="md:hidden  py-4">
+          <div className="md:hidden py-4">
             <div className="flex flex-col items-center justify-center space-y-4">
-              <button 
-                onClick={() => scrollToSection('home')}
-                className="text-white hover:text-[#D4AF37] transition-colors cursor-pointer duration-200 font-inter text-left"
-              >
-                Home
+              <button onClick={() => scrollToSection('home')} className="text-white hover:text-[#D4AF37] transition-colors duration-200 font-inter text-left">
+                home
               </button>
-              <button 
-                onClick={() => scrollToSection('about')}
-                className="text-white hover:[#D4AF37] transition-colors cursor-pointer duration-200 font-inter text-left"
-              >
-                About
+              <button onClick={() => scrollToSection('about')} className="text-white hover:text-[#D4AF37] transition-colors duration-200 font-inter text-left">
+                about
               </button>
-              <button 
-                onClick={() => scrollToSection('projects')}
-                className="text-white hover:[#D4AF37] transition-colors cursor-pointer duration-200 font-inter text-left"
-              >
-                Projects
+              <button onClick={() => scrollToSection('projects')} className="text-white hover:text-[#D4AF37] transition-colors duration-200 font-inter text-left">
+                projects
               </button>
-              <button 
-                onClick={() => scrollToSection('services')}
-                className="text-white hover:[#D4AF37] transition-colors cursor-pointer duration-200 font-inter text-left"
-              >
-                Services
+              <button onClick={() => scrollToSection('services')} className="text-white hover:text-[#D4AF37] transition-colors duration-200 font-inter text-left">
+                services
               </button>
-              <button 
-                onClick={() => scrollToSection('pricing')}
-                className="text-white hover:[#D4AF37] transition-colors cursor-pointer duration-200 font-inter text-left"
-              >
-                Pricing
+              <button onClick={() => scrollToSection('pricing')} className="text-white hover:text-[#D4AF37] transition-colors duration-200 font-inter text-left">
+                pricing
               </button>
-              <button 
-                onClick={() => scrollToSection('contact')}
-                className="text-white hover:text-[#D4AF37] transition-colors cursor-pointer duration-200 font-inter text-left"
-              >
-                Contact
+              <button onClick={() => scrollToSection('contact')} className="text-white hover:text-[#D4AF37] transition-colors duration-200 font-inter text-left">
+                contact
               </button>
               <Link href="#contact">
-              <Button 
-                onClick={() => scrollToSection('contact')}
-                className="bg-[#D4AF37] hover:bg-[#E6C659] text-[#0F1629] cursor-pointer font-semibold px-6 py-2 rounded-lg transition-all duration-200 w-fit"
-              >
-                Let's Work Together
-              </Button>
+                <Button 
+                  onClick={() => scrollToSection('contact')}
+                  className="bg-[#D4AF37] hover:bg-[#E6C659] text-[#0F1629] font-semibold px-6 py-2 rounded-lg transition-all duration-200 w-fit"
+                >
+                  Let's Work Together
+                </Button>
               </Link>
             </div>
           </div>
@@ -169,4 +133,3 @@ const Navigation = () => {
   );
 };
 
-export default Navigation;

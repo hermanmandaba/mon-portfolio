@@ -31,7 +31,7 @@ export default function RootLayout({
       suppressHydrationWarning
         className={`${inter.variable} ${poppins.variable} antialiased bg-background text-foreground border-border`}
       >
-        {children}
+      {children}
       </body>
     </html>
   );

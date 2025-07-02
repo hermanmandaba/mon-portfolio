@@ -9,8 +9,8 @@ export interface Project {
 
 const projects: Project[] = [
   {
-    title: "E-Commerce Platform",
-    description: "Modern e-commerce solution with Next.js, Stripe integration, and responsive design.",
+    title: "E-Commerce Landing Pages",
+    description: "Modern e-commerce landing page built with with Next.js, Stripe integration, and responsive design.",
     image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=400&fit=crop",
     tech: ["Next.js", "TypeScript", "Tailwind CSS", "Stripe"],
     liveUrl: "#",

@@ -27,7 +27,7 @@ const HeroSection = () => {
             Hermann <span className="text-[#D4AF37]">Mandaba</span>
           </h1>
           <p className="text-xl md:text-2xl lg:text-3xl text-gray-300 mb-8 font-inter">
-           I build animated,high-converting websites
+           I build animated, high-converting websites
           </p>
           <p className="text-lg md:text-xl text-gray-400 mb-12 max-w-2xl mx-auto font-inter leading-relaxed">
             For startups, entrepreneurs and modern brands who want to stand out online. Clean code. Smooth UI. Pixel-perfect.
