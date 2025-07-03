@@ -27,10 +27,10 @@ const projects: Project[] = [
   {
     title: "SaaS Landing Page",
     description: "High-converting landing page for a SaaS product with modern animations.",
-    image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=600&h=400&fit=crop",
+    image: "/Guiwara-Landing-Page-.png",
     tech: ["Next.js", "Framer Motion", "Tailwind CSS", "SEO Optimized"],
-    liveUrl: "#",
-    githubUrl: "#"
+    liveUrl: "https://guiwara.vercel.app/",
+    githubUrl: "https://github.com/hermanmandaba/guiwara"
   },
   {
     title: "Restaurant Website",
