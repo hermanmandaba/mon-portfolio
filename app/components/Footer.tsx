@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { FaXTwitter } from 'react-icons/fa6';
+import { FaFacebook, FaTiktok, FaXTwitter } from 'react-icons/fa6';
 import { FiGithub } from 'react-icons/fi';
 import { SiInstagram } from 'react-icons/si';
 import { SlSocialLinkedin } from 'react-icons/sl';
@@ -36,8 +36,8 @@ const Footer = () => {
                 <FiGithub size={24} />
               </Link>
               <Link
-                href="https://www.linkedin.com/in/herman-mandaba-547121371/" 
                 target="_blank" 
+                href="https://www.linkedin.com/in/herman-mandaba-547121371/" 
                 rel="noopener noreferrer"
                 className="text-gray-400 hover:text-[#D4AF37] transition-colors duration-200"
               >
@@ -58,6 +58,22 @@ const Footer = () => {
                 className="text-gray-400 hover:text-[#D4AF37] transition-colors duration-200"
               >
                 <FaXTwitter size={24} />
+              </Link>
+              <Link
+                href="#" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-gray-400 hover:text-[#D4AF37] transition-colors duration-200"
+              >
+                <FaFacebook size={24} />
+              </Link>
+              <Link
+                href="#" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-gray-400 hover:text-[#D4AF37] transition-colors duration-200"
+              >
+                <FaTiktok size={24} />
               </Link>
             </div>
             <p className="text-gray-400 text-sm font-inter">

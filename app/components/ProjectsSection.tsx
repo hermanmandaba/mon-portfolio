@@ -31,21 +31,7 @@ const ProjectsSection = () => {
                     className="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-110"
                   />
                   <div className="absolute inset-0 bg-[#0F1629]/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                    <div className="flex space-x-4">
-                      <Button 
-                        size="sm" 
-                        className="bg-[#D4AF37] hover:bg-[#E6C659] text-[#0F1629] cursor-pointer"
-                      >
-                        Live Demo
-                      </Button>
-                      <Button 
-                        size="sm" 
-                        variant="outline" 
-                        className="border-[#D4AF37] text-[#D4AF37] bg-white hover:bg-[#D4AF37] hover:text-[#0F1629] cursor-pointer"
-                      >
-                        GitHub
-                      </Button>
-                    </div>
+                    
                   </div>
                 </div>
                 <div className="p-6">
@@ -55,6 +41,7 @@ const ProjectsSection = () => {
                   <p className="text-gray-300 mb-4 font-inter leading-relaxed">
                     {project.description}
                   </p>
+                  <div className="space-y-5">
                   <div className="flex flex-wrap gap-2">
                     {project.tech.map((tech, techIndex) => (
                       <span 
@@ -62,8 +49,25 @@ const ProjectsSection = () => {
                         className="px-3 py-1 bg-[#D4AF37]/20 text-[#D4AF37] text-sm rounded-full font-inter cursor-pointer"
                       >
                         {tech}
+                        
                       </span>
                     ))}
+                  </div>
+                  <div className="flex space-x-4">
+                      <Button 
+                        size="sm" 
+                        className="bg-[#D4AF37] hover:bg-[#E6C659] text-[#0F1629] cursor-pointer"
+                      >
+                        Live Demo
+                      </Button>
+                      <Button 
+                        size="sm" 
+                        variant="outline" 
+                        className="border-[#D4AF37] text-[#D4AF37]  hover:bg-[#D4AF37] hover:text-[#0F1629] cursor-pointer"
+                      >
+                        GitHub
+                      </Button>
+                  </div>
                   </div>
                 </div>
               </CardContent>
