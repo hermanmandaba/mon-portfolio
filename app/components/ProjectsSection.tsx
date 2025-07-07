@@ -3,6 +3,7 @@ import { Card, CardContent } from '@/app/components/ui/card';
 import { Button } from './ui/Button';
 import projects from '@/app/types/Projects';
 import Image from 'next/image';
+import Link from 'next/link';
 
 const ProjectsSection = () => {
 
@@ -54,12 +55,21 @@ const ProjectsSection = () => {
                     ))}
                   </div>
                   <div className="flex space-x-4">
+                      <Link href={project.liveUrl} 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      >
                       <Button 
                         size="sm" 
                         className="bg-[#D4AF37] hover:bg-[#E6C659] text-[#0F1629] cursor-pointer"
                       >
                         Live Demo
                       </Button>
+                      </Link>
+                      <Link href={project.githubUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >
                       <Button 
                         size="sm" 
                         variant="outline" 
@@ -67,6 +77,7 @@ const ProjectsSection = () => {
                       >
                         GitHub
                       </Button>
+                      </Link>
                   </div>
                   </div>
                 </div>
