@@ -53,7 +53,6 @@ export const Navigation = () => {
             </button>
           </div>
           <div className="flex items-center justify-center gap-2">
-            <ToggleLangButton />
           <Link href="#contact">
             <Button 
               onClick={() => scrollToSection('contact')}
