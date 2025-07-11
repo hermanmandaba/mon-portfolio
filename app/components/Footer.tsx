@@ -1,11 +1,16 @@
+'use client'
 import Link from 'next/link';
 import { FaFacebook, FaTiktok, FaXTwitter } from 'react-icons/fa6';
 import { FiGithub } from 'react-icons/fi';
 import { SiInstagram } from 'react-icons/si';
 import { SlSocialLinkedin } from 'react-icons/sl';
+import { useLanguage } from '../context/LanguageContext';
+import { translations } from '../utils/translations';
 
 
 const Footer = () => {
+  const { language } = useLanguage();
+  const t = translations[language].footer;
   return (
     <footer className="bg-[#1A2332] border-t border-[#D4AF37]/20 py-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -17,11 +22,11 @@ const Footer = () => {
               </Link>
               <div>
                 <p className="text-white font-semibold font-poppins">Hermann Mandaba</p>
-                <p className="text-gray-400 font-inter">Frontend Web Developer</p>
+                <p className="text-gray-400 font-inter">{t.role}</p>
               </div>
             </div>
             <p className="text-gray-400 font-inter">
-              Crafting exceptional digital experiences
+              {t.slogan}
             </p>
           </div>
 
@@ -77,7 +82,7 @@ const Footer = () => {
               </Link>
             </div>
             <p className="text-gray-400 text-sm font-inter">
-              © 2025 Hermann Mandaba. All rights reserved.
+              © 2025 Hermann Mandaba. {t.copyright}
             </p>
           </div>
         </div>

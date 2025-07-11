@@ -1,6 +1,5 @@
 'use client';
 
-/* eslint-disable react/no-unescaped-entities */
 import { useState } from 'react';
 import { toast } from 'sonner';
 import { Card, CardContent } from './ui/card';
@@ -8,8 +7,13 @@ import { Input } from './ui/Input';
 import { Textarea } from './ui/Textarea';
 import { Button } from './ui/Button';
 import { MailIcon } from 'lucide-react';
+import { useLanguage } from '../context/LanguageContext';
+import { translations } from '../utils/translations';
 
 const ContactSection = () => {
+  const { language } = useLanguage();
+  const t = translations[language].contact;
+
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -64,10 +68,10 @@ const ContactSection = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold font-poppins text-[#D4AF37] mb-6">
-            Let's Work Together
+            {t.title}
           </h2>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto font-inter leading-relaxed">
-            Have a project in mind ? Whether it's a landing page, a business site or a full e-commerce platform. I'm here to turn your ideas into fast, modern, and animated web experiences.
+            {t.subtitle}
           </p>
         </div>
 
@@ -77,7 +81,7 @@ const ContactSection = () => {
             <CardContent className="p-8">
               {!submitted ? (
                 <>
-                  <h3 className="text-2xl font-semibold font-poppins text-white mb-6">Send a Message</h3>
+                  <h3 className="text-2xl font-semibold font-poppins text-white mb-6">{t.sendMessage}</h3>
                   <form onSubmit={handleSubmit} className="space-y-6">
                     <Input
                       type="text"
@@ -117,15 +121,15 @@ const ContactSection = () => {
                 </>
               ) : (
                 <div className="text-center py-10 animate-fade-in">
-                  <h3 className="text-3xl font-bold text-[#D4AF37] mb-4">Thank You! 🙏</h3>
+                  <h3 className="text-3xl font-bold text-[#D4AF37] mb-4">{t.successTitle}</h3>
                   <p className="text-gray-300 text-lg mb-6">
-                    Your message has been sent successfully.<br />I'll get back to you soon!
+                    {t.successMessage}
                   </p>
                   <Button
                     onClick={() => setSubmitted(false)}
                     className="bg-transparent border-2 border-[#D4AF37] text-[#D4AF37] hover:bg-[#D4AF37] hover:text-[#0F1629] font-semibold px-6 py-3 rounded-lg transition-all"
                   >
-                    Send Another Message
+                    {t.anotherMessage}
                   </Button>
                 </div>
               )}
@@ -135,10 +139,9 @@ const ContactSection = () => {
           {/* Contact Info */}
           <div className="space-y-8">
             <div>
-              <h3 className="text-2xl font-semibold font-poppins text-white mb-6">Get in Touch</h3>
+              <h3 className="text-2xl font-semibold font-poppins text-white mb-6">{t.getInTouch}</h3>
               <p className="text-gray-300 mb-8 font-inter leading-relaxed">
-                I'm always excited to take on new challenges and collaborate on innovative projects.
-                Whether you need a complete website or just want to discuss ideas, I'm here to help.
+                {t.getInTouchText}
               </p>
             </div>
 
@@ -150,7 +153,7 @@ const ContactSection = () => {
                   </svg>
                 </div>
                 <div>
-                  <p className="text-white font-semibold">Email</p>
+                  <p className="text-white font-semibold">{t.email}</p>
                   <p className="text-gray-300">hermann.mandaba@example.com</p>
                 </div>
               </div>
@@ -163,8 +166,8 @@ const ContactSection = () => {
                   </svg>
                 </div>
                 <div>
-                  <p className="text-white font-semibold">Location</p>
-                  <p className="text-gray-300">Available Worldwide</p>
+                  <p className="text-white font-semibold">{t.location}</p>
+                  <p className="text-gray-300">{t.worldwide}</p>
                 </div>
               </div>
             </div>
@@ -174,7 +177,7 @@ const ContactSection = () => {
               className="bg-transparent border-2 border-[#D4AF37] text-[#D4AF37] hover:bg-[#D4AF37] hover:text-[#0F1629] font-semibold px-8 py-3 rounded-lg transition-all duration-200"
             >
               <MailIcon className="w-5 h-5" />
-              Email Me Directly
+              {t.emailMe}
             </Button>
           </div>
         </div>

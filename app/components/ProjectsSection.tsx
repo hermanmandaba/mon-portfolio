@@ -1,22 +1,26 @@
-/* eslint-disable react/no-unescaped-entities */
+'use client'
 import { Card, CardContent } from '@/app/components/ui/card';
 import { Button } from './ui/Button';
-import projects from '@/app/types/Projects';
 import Image from 'next/image';
 import Link from 'next/link';
+import { translations } from '../utils/translations';
+import { useLanguage } from '../context/LanguageContext';
+import { projects } from '../types/Projects';
+
 
 const ProjectsSection = () => {
+  const { language } = useLanguage();
+  const t = translations[language].projects
 
   return (
     <section id="projects" className="py-20 bg-[#0F1629]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold font-poppins text-[#D4AF37] mb-6">
-            Featured Projects
+            {t.title}
           </h2>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto font-inter leading-relaxed">
-            Here's a selection of my recent projects - each one crafted with precision, creativity, and a focus on real user experience. 
-            From animated landing pages to fully responsive websites and onlines stores, these works reflect my approch: clean code, elegant design, and measurable results.
+            {t.description}
           </p>
         </div>
 
@@ -27,7 +31,7 @@ const ProjectsSection = () => {
                 <div className="relative w-full h-48 overflow-hidden rounded-t-lg">
                   <Image
                     src={project.image} 
-                    alt={project.title}
+                    alt={project.title[language]}
                     fill
                     className="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-110"
                   />
@@ -37,10 +41,10 @@ const ProjectsSection = () => {
                 </div>
                 <div className="p-6">
                   <h3 className="text-xl font-semibold font-poppins text-white mb-3">
-                    {project.title}
+                    {project.title[language]}
                   </h3>
                   <p className="text-gray-300 mb-4 font-inter leading-relaxed">
-                    {project.description}
+                    {project.description[language]}
                   </p>
                   <div className="space-y-5">
                   <div className="flex flex-wrap gap-2">
@@ -63,7 +67,7 @@ const ProjectsSection = () => {
                         size="sm" 
                         className="bg-[#D4AF37] hover:bg-[#E6C659] text-[#0F1629] cursor-pointer"
                       >
-                        Live Demo
+                        {t.liveDemo}
                       </Button>
                       </Link>
                       <Link href={project.githubUrl}
@@ -75,7 +79,7 @@ const ProjectsSection = () => {
                         variant="outline" 
                         className="border-[#D4AF37] text-[#D4AF37]  hover:bg-[#D4AF37] hover:text-[#0F1629] cursor-pointer"
                       >
-                        GitHub
+                        {t.github}
                       </Button>
                       </Link>
                   </div>

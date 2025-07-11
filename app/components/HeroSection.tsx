@@ -1,8 +1,9 @@
 "use client"
 
 import Link from "next/link";
-/* eslint-disable react/no-unescaped-entities */
 import { Button } from "./ui/Button";
+import { translations } from "../utils/translations";
+import { useLanguage } from "../context/LanguageContext";
 
 const HeroSection = () => {
   const scrollToContact = () => {
@@ -11,6 +12,9 @@ const HeroSection = () => {
       element.scrollIntoView({ behavior: 'smooth' });
     }
   };
+  const { language } = useLanguage();
+  const t = translations[language].hero;
+
 
   return (
     <section id="home" className="min-h-screen bg-[#0F1629] flex items-center justify-center relative overflow-hidden">
@@ -24,21 +28,20 @@ const HeroSection = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
         <div className="animate-fade-in">
           <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold font-poppins text-white mb-6">
-            Hermann <span className="text-[#D4AF37]">Mandaba</span>
+            {t.title.split(' ')[0]} <span className="text-[#D4AF37]">{t.title.split(' ')[1]}</span>
           </h1>
           <p className="text-xl md:text-2xl lg:text-3xl text-gray-300 mb-8 font-inter">
-           I build animated, high-converting websites
+           {t.subtitle}
           </p>
           <p className="text-lg md:text-xl text-gray-400 mb-12 max-w-2xl mx-auto font-inter leading-relaxed">
-            For startups, entrepreneurs and modern brands who want to stand out online. Clean code. Smooth UI. Pixel-perfect.
-            Built with React, Tailwind and motion design magic. 
+            {t.description} 
           </p>
           <Link href="#contact">
           <Button 
             onClick={scrollToContact}
             className="bg-[#D4AF37] hover:bg-[#E6C659] text-[#0F1629] font-semibold px-8 py-4 text-lg rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-[#D4AF37]/25 cursor-pointer"
           >
-            Let's Work Together
+            {t.cta}
           </Button>
           </Link>
         </div>

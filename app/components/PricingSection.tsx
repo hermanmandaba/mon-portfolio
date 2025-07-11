@@ -1,13 +1,16 @@
 'use client'
-/* eslint-disable react/no-unescaped-entities */
 import { Check } from "lucide-react";
 import pricingPlans from "../types/Pricing";
 import { Button } from "./ui/Button";
 import { Card, CardContent } from "./ui/card";
 import Link from "next/link";
+import { useLanguage } from "../context/LanguageContext";
+import { translations } from "../utils/translations";
 
 
 const PricingSection = () => {
+    const { language } = useLanguage();
+  const t = translations[language].pricing;
 
   const scrollToContact = () => {
     const element = document.getElementById('contact');
@@ -21,12 +24,10 @@ const PricingSection = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold font-poppins text-[#D4AF37] mb-6">
-            Pricing
+            {t.title}
           </h2>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto font-inter leading-relaxed">
-            Transparent pricing. No surprises. Each package is tailored to fit your goals. 
-            Whether you're launching a product, showcasing your brand, or selling online. 
-            Get premium design, clean code, and full support at every stage of the project.
+            {t.description}
           </p>
         </div>
 
@@ -43,7 +44,7 @@ const PricingSection = () => {
               {plan.popular && (
                 <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
                   <span className="bg-[#D4AF37] text-[#0F1629] px-4 py-1 rounded-full text-sm font-semibold font-inter">
-                    Most Popular
+                    {t.mostPopular} 
                   </span>
                 </div>
               )}
@@ -51,7 +52,7 @@ const PricingSection = () => {
               <CardContent className="p-8">
                 <div className="text-center mb-8">
                   <h3 className="text-2xl font-bold font-poppins text-[#D4AF37] mb-2">
-                    {plan.name}
+                    {plan.name[language]}
                   </h3>
                   <div className="mb-4">
                     <span className="text-4xl font-bold font-poppins text-white">
@@ -59,12 +60,12 @@ const PricingSection = () => {
                     </span>
                   </div>
                   <p className="text-gray-300 font-inter">
-                    {plan.description}
+                    {plan.description[language]}
                   </p>
                 </div>
 
                 <div className="space-y-4 mb-8">
-                  {plan.features.map((feature, featureIndex) => (
+                  {plan.features[language].map((feature, featureIndex) => (
                     <div key={featureIndex} className="flex items-center">
                       <Check size={20} className="text-[#D4AF37] mr-3 flex-shrink-0" />
                       <span className="text-gray-300 font-inter">{feature}</span>
@@ -80,7 +81,7 @@ const PricingSection = () => {
                       : 'bg-transparent border border-[#D4AF37] text-[#D4AF37] hover:bg-[#D4AF37] hover:text-[#0F1629]'
                   }`}
                 >
-                  Get Started
+                  {t.button}
                 </Button>
                 </Link>
               </CardContent>
@@ -90,14 +91,14 @@ const PricingSection = () => {
 
         <div className="text-center mt-12">
           <p className="text-gray-400 font-inter mb-4">
-            Not sure which option is right for you? Let's talk and fing the best fit.
+            {t.footerText}
           </p>
           <Link href="#contact">
           <Button 
             onClick={scrollToContact}
             className="bg-transparent border border-[#D4AF37] text-[#D4AF37] hover:bg-[#D4AF37] hover:text-[#0F1629] font-semibold px-8 py-3 transition-all duration-200"
           >
-            Request Custom Quote
+            {t.customQuote}
           </Button>
           </Link>
         </div>

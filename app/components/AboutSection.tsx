@@ -1,10 +1,11 @@
 "use client"
 
-/* eslint-disable react/no-unescaped-entities */
 import skills from "@/app/types/Skills";
 import Image from "next/image";
 import { motion, useAnimation, useInView, easeInOut } from "framer-motion"
 import { useRef, useEffect } from "react"
+import { useLanguage } from "../context/LanguageContext";
+import { translations } from "../utils/translations";
 
 
 
@@ -22,6 +23,9 @@ const fadeInUp = {
 
 
 const AboutSection = () => {
+
+  const { language } = useLanguage();
+  const t = translations[language].aboutMe;
 
 const ref = useRef(null)
   const isInView = useInView(ref, { once: true })
@@ -69,18 +73,18 @@ const ref = useRef(null)
             className="animate-slide-up"
             >
             <h2 className="text-4xl md:text-5xl font-bold font-poppins text-[#D4AF37] mb-6">
-              About Me
+              {t.title}
             </h2>
             <p className="text-lg text-gray-300 mb-8 font-inter leading-relaxed">
-              I'm Hermann, a frontend web developer driven by design, detail, and results. With over 2 years of experience, I craft fast, responsive, and animated web interfaces that make brands stand out. I specialize in modern stacks like React and Tailwind, and I focus on delivering clean code and great user experiences.
+              {t.paragraph1}
             </p>
             <p className="text-lg text-gray-300 mb-8 font-inter leading-relaxed">
-              Whether it's a landing page, a company website, or an online store. I turn ideas into elegant, functionnal web solutions. Let's wok together to bring your vision to life.
+              {t.paragraph2}
             </p>
 
             {/* Skills */}
             <div className="space-y-6">
-              <h3 className="text-2xl font-semibold font-poppins text-white mb-4">Core Skills</h3>
+              <h3 className="text-2xl font-semibold font-poppins text-white mb-4">{t.skillsTitle}</h3>
               {skills.map((skill, index) => (
                 <motion.div
                   key={skill.name}
