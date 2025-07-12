@@ -52,7 +52,8 @@ export const Navigation = () => {
               {t("nav.contact")}
             </button>
           </div>
-          <div className="flex items-center justify-center gap-2">
+          <div className="hidden md:flex items-center gap-4 z-50">
+             <ToggleLangButton /> 
           <Link href="#contact">
             <Button 
               onClick={() => scrollToSection('contact')}
@@ -65,7 +66,7 @@ export const Navigation = () => {
 
           {/* Mobile Menu Button */}
           <div className="flex items-center gap-4 md:hidden z-50">
-          <ToggleLangButton />
+            <ToggleLangButton />
           <button
             className="md:hidden text-white z-50"
             onClick={() => setIsMenuOpen(!isMenuOpen)}

@@ -12,13 +12,14 @@ export const translations = {
         },
         hero: {
             title: "Hermann Mandaba",
-            subtitle: "Je crée des sites animés et à forte conversion",
+            subtitle: "Je construis des sites animés et à forte conversion",
             description:
                 "Pour les startups, entrepreneurs et marques modernes qui veulent se démarquer en ligne. Code propre. UI fluide. Pixel perfect. Construit avec React, Tailwind et une touche de motion design.",
             cta: "Travaillons ensemble",
+            ctaProjects: "Voir Mes Projets"
         },
         aboutMe: {
-            title: "Qui Je Suis",
+            title: "Qui Suis-Je",
             paragraph1:
                     "Je suis Hermann, développeur frontend passionné par le design, les détails et les résultats. Avec plus de 2 ans d'expérience, je conçois des interfaces web rapides, réactives et animées qui aident les marques à se démarquer. Je me spécialise dans les technologies modernes comme React et Tailwind, avec un souci du code propre et de l’expérience utilisateur.",
             paragraph2:
@@ -78,14 +79,15 @@ export const translations = {
             projects: "Projects",
             pricing: 'Pricing',
             contact: 'Contact',
-            cta: "Let's Work Together"
+            cta: "Work With Me"
         },
         hero: {
             title: "Hermann Mandaba",
             subtitle: "I build animated, high-converting websites",
             description:
                 "For startups, entrepreneurs and modern brands who want to stand out online. Clean code. Smooth UI. Pixel-perfect. Built with React, Tailwind and motion design magic.",
-            cta: "Let's Work Together",
+            cta: "Work With Me",
+            ctaProjects:"View My Work"
         }, 
         aboutMe: {
             title: "Who I Am",

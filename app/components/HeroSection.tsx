@@ -12,6 +12,12 @@ const HeroSection = () => {
       element.scrollIntoView({ behavior: 'smooth' });
     }
   };
+  const scrollToProjects = () => {
+    const element = document.getElementById('projects')
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth'});
+    }
+  } 
   const { language } = useLanguage();
   const t = translations[language].hero;
 
@@ -36,7 +42,8 @@ const HeroSection = () => {
           <p className="text-lg md:text-xl text-gray-400 mb-12 max-w-2xl mx-auto font-inter leading-relaxed">
             {t.description} 
           </p>
-          <Link href="#contact">
+          <div className="space-x-4 md:space-y-3">
+            <Link href="#contact">
           <Button 
             onClick={scrollToContact}
             className="bg-[#D4AF37] hover:bg-[#E6C659] text-[#0F1629] font-semibold px-8 py-4 text-lg rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-[#D4AF37]/25 cursor-pointer"
@@ -44,6 +51,16 @@ const HeroSection = () => {
             {t.cta}
           </Button>
           </Link>
+
+          <Link href="#projects">
+          <Button 
+            onClick={scrollToProjects}
+            className="bg-[#0F1629] border borde-[#D4AF37]  text-[#D4AF37] font-semibold px-8 py-4 text-lg rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-[#D4AF37]/25 cursor-pointer"
+          >
+            {t.ctaProjects}
+          </Button>
+          </Link>
+          </div>
         </div>
       </div>
 
