@@ -42,7 +42,7 @@ const HeroSection = () => {
           <p className="text-lg md:text-xl text-gray-400 mb-12 max-w-2xl mx-auto font-inter leading-relaxed">
             {t.description} 
           </p>
-          <div className="space-x-4 md:space-y-3">
+          <div className="flex flex-col md:flex-row items-center justify-center py-2 space-y-4 md:space-y-0 md:space-x-4">
             <Link href="#contact">
           <Button 
             onClick={scrollToContact}
