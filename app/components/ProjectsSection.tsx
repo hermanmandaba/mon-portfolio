@@ -77,7 +77,7 @@ const ProjectsSection = () => {
                       <Button 
                         size="sm" 
                         variant="outline" 
-                        className="border-[#D4AF37] text-[#D4AF37]  hover:bg-[#D4AF37] hover:text-[#0F1629] cursor-pointer"
+                        className="border-[#D4AF37] text-[#D4AF37]  hover:bg-gray-100 hover:text-[#D4AF37] cursor-pointer"
                       >
                         {t.github}
                       </Button>

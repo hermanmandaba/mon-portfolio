@@ -5,10 +5,9 @@ type Skill = {
 
 const skills: Skill[] = [
     { name: 'Next.js', level: 80 },
-    { name: 'Tailwind CSS', level: 90 },
+    { name: 'Tailwind CSS', level: 75 },
     { name: 'TypeScript', level: 80 },
     { name: 'API Integration', level: 85 },
-    { name: 'Stripe', level: 75 },
     { name: 'Responsive Design', level: 95 }
   ];
 

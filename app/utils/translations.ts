@@ -12,38 +12,38 @@ export const translations = {
         },
         hero: {
             title: "Hermann Mandaba",
-            subtitle: "Je construis des sites animés et à forte conversion",
+            subtitle: "Je construis des sites web modernes et à forte conversion",
             description:
-                "Pour les startups, entrepreneurs et marques modernes qui veulent se démarquer en ligne. Code propre. UI fluide. Pixel perfect. Construit avec React, Tailwind et une touche de motion design.",
+                " Pour les entrepreneurs, startups et entreprises ambitieuses d’Afrique: bénéficiez d’un site vitrine conçu pour attirer plus de clients, visible sur tous les appareils et adapté à votre budget local.",
             cta: "Travaillons ensemble",
             ctaProjects: "Voir Mes Projets"
         },
         aboutMe: {
             title: "Qui Suis-Je",
             paragraph1:
-                    "Je suis Hermann, développeur frontend passionné par le design, les détails et les résultats. Avec plus de 2 ans d'expérience, je conçois des interfaces web rapides, réactives et animées qui aident les marques à se démarquer. Je me spécialise dans les technologies modernes comme React et Tailwind, avec un souci du code propre et de l’expérience utilisateur.",
+                    "Je m’appelle Hermann, développeur frontend basé en République centrafricaine, passionné par la création de solutions digitales qui font la différence. Fort de plus de 2 ans d’expérience, je conçois des sites web modernes, animés et performants, pensés pour captiver vos visiteurs et renforcer votre présence en ligne.",
             paragraph2:
-                    "Que ce soit une landing page, un site d’entreprise ou une boutique en ligne, je transforme vos idées en solutions web élégantes et fonctionnelles. Travaillons ensemble pour concrétiser votre vision.",
-            skillsTitle: "Compétences clés",
+                    "Que vous soyez entrepreneur, PME ou grande entreprise, je transforme vos idées en interfaces élégantes, réactives et accessibles sur mobile comme sur desktop. Qu’il s’agisse d’une landing page, d’un site vitrine ou d’une page produit, chaque projet bénéficie d’un accompagnement personnalisé, adapté à vos objectifs et à votre budget.",
+            skillsTitle: "Compétences Clés",
         },
         projects: {
             title: "Projets à la Une",
             description:
-                "Voici une sélection de mes projets récents – chacun conçu avec précision, créativité et une attention particulière à l’expérience utilisateur. Des landing pages animées aux sites web responsives et boutiques en ligne, ces réalisations reflètent mon approche : code propre, design élégant et résultats mesurables.",
+                "Découvrez mes projets les plus récents, conçus pour accompagner la transformation digitale des entrepreneurs et entreprises en Afrique.",
             liveDemo: "Voir le projet",
             github: "Code source",
         }, 
         services: {
             title: "Services",
             description:
-                "Je propose quatre services web conçus pour répondre à vos besoins professionnels. Que vous lanciez, développiez ou fassiez évoluer votre présence en ligne, chaque service est pensé pour la performance, le design et la conversion.",
+                "Découvrez mes services web pensés pour accompagner la croissance des entreprises, entrepreneurs et associations en Afrique. Que vous débutiez, cherchiez à vous développer ou à faire évoluer votre présence en ligne.",
         },
         pricing: {
             title: "Tarifs",
             description:
-                "Tarifs transparents. Pas de surprises. Chaque offre est conçue pour répondre à vos objectifs. Que vous lanciez un produit, présentiez votre marque ou vendiez en ligne, vous bénéficierez d’un design premium, d’un code propre et d’un accompagnement complet à chaque étape du projet.",
-            mostPopular: "Le plus populaire",
+                "Découvrez des offres claires et transparentes, adaptées à toutes les ambitions digitales. Bénéficiez à chaque niveau d’un accompagnement personnalisé, d’un design soigné et d’une réalisation sans compromis.",
             button: "Commencer",
+            mostPopular: "Populaire",
             footerText: "Vous ne savez pas quelle option choisir ? Discutons ensemble pour trouver la solution idéale.",
             customQuote: "Demander un devis personnalisé",
         },
@@ -83,36 +83,36 @@ export const translations = {
         },
         hero: {
             title: "Hermann Mandaba",
-            subtitle: "I build animated, high-converting websites",
+            subtitle: "I build modern, high conversion websites",
             description:
-                "For startups, entrepreneurs and modern brands who want to stand out online. Clean code. Smooth UI. Pixel-perfect. Built with React, Tailwind and motion design magic.",
+                "For entrepreneurs, startups, and ambitious businesses in Africa: get a showcase website designed to attract more clients, visible on all devices, and tailored to your local budget.",
             cta: "Work With Me",
             ctaProjects:"View My Work"
         }, 
         aboutMe: {
             title: "Who I Am",
             paragraph1:
-                "I'm Hermann, a frontend web developer driven by design, detail, and results. With over 2 years of experience, I craft fast, responsive, and animated web interfaces that make brands stand out. I specialize in modern stacks like React and Tailwind, and I focus on delivering clean code and great user experiences.",
+                "I'm Hermann, a frontend developer based in the Central African Republic, passionate about creating digital solutions that make a difference. With over 2 years of experience, I design modern, animated, and high-performing websites crafted to captivate your visitors and strengthen your online presence.",
             paragraph2:
-                "Whether it's a landing page, a company website, or an online store. I turn ideas into elegant, functional web solutions. Let's work together to bring your vision to life.",
+                "Whether you're an entrepreneur, a small business, or a large company, I turn your ideas into elegant, responsive, and accessible interfaces—on both mobile and desktop. From landing pages to showcase websites or product pages, every project comes with personalized support tailored to your goals and your budget.",
             skillsTitle: "Core Skills",
         },
         projects: {
             title: "Featured Projects",
             description:
-                "Here's a selection of my recent projects - each one crafted with precision, creativity, and a focus on real user experience. From animated landing pages to fully responsive websites and online stores, these works reflect my approach: clean code, elegant design, and measurable results.",
+                "Discover my latest projects, designed to support the digital transformation of entrepreneurs and businesses in Africa.",
             liveDemo: "Live Preview",
             github: "GitHub",
         },
         services: {
             title: "Services",
             description:
-                "I offer four web services designed to meet your business needs. Whether you're launching, growing, or scaling online. Each service is built with performance, design, and conversion in mind.",
+                "Discover my web services designed to support the growth of businesses, entrepreneurs, and associations across Africa. Whether you're just starting out, looking to grow, or aiming to enhance your online presence.",
         },
         pricing: {
             title: "Pricing",
             description:
-                "Transparent pricing. No surprises. Each package is tailored to fit your goals. Whether you're launching a product, showcasing your brand, or selling online. Get premium design, clean code, and full support at every stage of the project.",
+                "Explore clear and transparent offers tailored to every digital ambition. At every level, benefit from personalized support, refined design, and uncompromising execution",
             mostPopular: "Most Popular",
             button: "Get Started",
             footerText: "Not sure which option is right for you? Let's talk and find the best fit.",

@@ -113,7 +113,7 @@ const ContactSection = () => {
                     <Button
                       type="submit"
                       disabled={loading}
-                      className="w-full bg-[#D4AF37] hover:bg-[#E6C659] text-[#0F1629] font-semibold py-3 rounded-lg transition-all duration-200"
+                      className="w-full bg-[#D4AF37] hover:bg-[#E6C659] text-[#0F1629] font-semibold py-3 rounded-lg transition-all duration-200 cursor-pointer"
                     >
                       {loading ? 'Sending...' : 'Send Message'}
                     </Button>
@@ -127,7 +127,7 @@ const ContactSection = () => {
                   </p>
                   <Button
                     onClick={() => setSubmitted(false)}
-                    className="bg-transparent border-2 border-[#D4AF37] text-[#D4AF37] hover:bg-[#D4AF37] hover:text-[#0F1629] font-semibold px-6 py-3 rounded-lg transition-all"
+                    className="bg-transparent border-2 border-[#D4AF37] text-[#D4AF37] hover:bg-[#D4AF37] hover:text-[#0F1629] font-semibold px-6 py-3 rounded-lg transition-all cursor-pointer"
                   >
                     {t.anotherMessage}
                   </Button>
@@ -174,7 +174,7 @@ const ContactSection = () => {
 
             <Button
               onClick={handleEmailClick}
-              className="bg-transparent border-2 border-[#D4AF37] text-[#D4AF37] hover:bg-[#D4AF37] hover:text-[#0F1629] font-semibold px-8 py-3 rounded-lg transition-all duration-200"
+              className="bg-transparent border-2 border-[#D4AF37] text-[#D4AF37] hover:bg-[#D4AF37] hover:text-[#0F1629] font-semibold px-8 py-3 rounded-lg transition-all duration-200 cursor-pointer"
             >
               <MailIcon className="w-5 h-5" />
               {t.emailMe}

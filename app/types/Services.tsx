@@ -44,35 +44,34 @@ const services: Service[] = [
   },
   {
     title: {
-      en: 'UI Implementation',
-      fr: 'Intégration UI',
+      en:'Site Optimization & Redesign',
+      fr: 'Optimisation & Refonte de Sites',
     },
     description: {
-      en: 'Got a Figma or design file? I turn your UI into clean, pixel-perfect, production-ready code using React & Tailwind.',
-      fr: 'Vous avez une maquette Figma ? Je transforme votre UI en code propre, pixel-perfect et prêt pour la production avec React & Tailwind.',
+      en: 'Bring your website back to life with a complete optimization and redesign service, crafted to maximize your online impact and align with today’s digital standards.',
+      fr: 'Redonnez vie à votre site web avec un service complet d’optimisation et de refonte, pensé pour maximiser votre impact en ligne et vous aligner sur les standards digitaux actuels.',
     },
     features: [
-      { en: 'Figma to Code', fr: 'Figma en code' },
-      { en: 'Interactive Elements', fr: 'Éléments interactifs' },
-      { en: 'Cross-browser Compatible', fr: 'Compatible tous navigateurs' },
-      { en: 'Performance Optimized', fr: 'Optimisé performance' },
+      { en: 'Detailed audit of the existing website', fr: 'Audit détaillé du site existant' },
+      { en: 'Design modernization', fr: 'Modernisation du design' },
+      { en: 'Advanced technical optimization', fr: 'Optimisation technique avancée' },
+      { en: 'Migration and security', fr: 'Migration et sécurité' },
     ],
   },
   {
     title: {
-      en: 'E-Commerce Landing Pages',
-      fr: 'Pages e-commerce',
+      en: 'Maintenance & Technical Support',
+      fr: 'Maintenance & Support Technique',
     },
     description: {
       en: 'Fully functional, responsive online stores with custom checkout, product pages and CMS integration.',
-      fr: 'Boutiques en ligne fonctionnelles et responsive avec paiement intégré, pages produits et CMS.',
+      fr: 'La maintenance et le support technique sont essentiels pour garantir que votre site internet reste fonctionnel, sécurisé et performant sur le long terme.',
     },
     features: [
-      { en: 'Simple Add-to-Cart or Direct Checkout Flow', fr: 'Ajout au panier ou paiement direct' },
-      { en: 'Secure Payment Integration', fr: 'Paiement sécurisé' },
-      { en: 'Custom Product Page Layout', fr: 'Mise en page produit personnalisée' },
-      { en: 'CMS Integration (optional)', fr: 'Intégration CMS (optionnelle)' },
-      { en: 'Fully Responsive & Smooth Animations', fr: 'Responsive et animations fluides' },
+      { en: 'Continuous update', fr: 'Mises à jour constinue' },
+      { en: 'Data cleaning and optimization', fr: 'Nettoyage et optimisation des données' },
+      { en: 'Continuous performance monitoring', fr: 'Surveillance continue des performances' },
+      { en: 'Technical Support', fr: 'Assistance technique' },
     ],
   },
 ];

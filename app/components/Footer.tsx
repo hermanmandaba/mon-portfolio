@@ -65,7 +65,7 @@ const Footer = () => {
                 <FaXTwitter size={24} />
               </Link>
               <Link
-                href="#" 
+                href="https://www.facebook.com/profile.php?id=61578101008163" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="text-gray-400 hover:text-[#D4AF37] transition-colors duration-200"
@@ -73,7 +73,7 @@ const Footer = () => {
                 <FaFacebook size={24} />
               </Link>
               <Link
-                href="#" 
+                href="https://www.tiktok.com/@herman.mandaba?_t=ZM-8y5frVDySBS&_r=1" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="text-gray-400 hover:text-[#D4AF37] transition-colors duration-200"

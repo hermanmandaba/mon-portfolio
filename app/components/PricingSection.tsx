@@ -75,7 +75,7 @@ const PricingSection = () => {
                   <Link href="#contact">
                 <Button 
                   onClick={scrollToContact}
-                  className={`w-full py-3 font-semibold transition-all duration-200 ${
+                  className={`w-full py-3 font-semibold transition-all duration-200 cursor-pointer ${
                     plan.popular
                       ? 'bg-[#D4AF37] hover:bg-[#E6C659] text-[#0F1629]'
                       : 'bg-transparent border border-[#D4AF37] text-[#D4AF37] hover:bg-[#D4AF37] hover:text-[#0F1629]'
@@ -96,7 +96,7 @@ const PricingSection = () => {
           <Link href="#contact">
           <Button 
             onClick={scrollToContact}
-            className="bg-transparent border border-[#D4AF37] text-[#D4AF37] hover:bg-[#D4AF37] hover:text-[#0F1629] font-semibold px-8 py-3 transition-all duration-200"
+            className="bg-transparent border border-[#D4AF37] text-[#D4AF37] hover:bg-[#D4AF37] hover:text-[#0F1629] font-semibold px-8 py-3 transition-all duration-200 cursor-pointer"
           >
             {t.customQuote}
           </Button>
